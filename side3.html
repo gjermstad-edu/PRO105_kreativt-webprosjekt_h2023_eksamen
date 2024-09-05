@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapittel 3 - Bryllup i Las Vegas</title> <!-- Husk å endre til nummeret for din slide -->
+    <link rel="stylesheet" href="css/side3.css"> <!-- Laster først inn inn CSS-koden som er kun for denne sliden -->
+    <link rel="stylesheet" href="css/global.css"> <!-- Laster CSS-koden som er global/lik for alle sidene vi lager -->
+</head>
+<body>
+    <!-- Eksamensgruppe 8 Bergen - Kreativt Webprosjekt H2023 -->
+    <!-- Slide 3 er kodet av Kenneth A. B. Gjermstad -->
+
+    <!-- Her ligger alle deler for menyen i topplinjen -->
+    <header>
+        <div id="top-header">
+
+            <div id="top-container">
+
+                <div id="top-left">
+                    <div id="menuToggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="hamburger-menu">
+                            <!-- Her endrer vi # til å linke til hvert kapitel når vi har lagd sidene -->
+                            <li><strong>Gå til:</strong></li>
+                            <li class="skille"><a href="index.html">• Kapittel 1</a></li>
+                            <li class="skille"><a href="side2.html">• Kapittel 2</a></li>
+                            <li class="skille"><a href="side3.html">• Kapittel 3</a></li>
+                            <li class="skille"><a href="side4.html">• Kapittel 4</a></li>
+                            <li><a href="side5.html">• Kapittel 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="top-middle">
+                    <!-- Endre kapittel-navn til hva som er riktig for din slide -->
+                    <h1>Kapittel 3: Prinsen får prinsessen</h1>    
+                </div>
+
+                <div id="top-right">
+                    <a href="side4.html">
+                    >
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Her ligger alle deler for "skjermen" vi viser historien i -->
+    <main>
+
+        <!-- Bakgrunnsbildet som er ute av fokus bak main-container -->
+        <div id="blurry-background-image-container">
+            <img src="images/background-church-blurry.jpg" alt="" id="background-blur-image"> <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+        </div>
+
+        <!-- Sett alle bilder og elementer inni "container"-diven under da dette er det aktive området vi arbeider med -->
+        <div id="main-container">
+            <!-- Bakgrunnsbilde: -->
+            <img src="images/background-church_cropped-full.jpg" alt="Bakgrunnsbilde av innsiden av kirke i Las Vegas" id="background-image">
+
+            <!-- DEL 1) Intro til scenen med tekstboks -->
+            <img src="images/background-church_floor-tile.png" alt="" id="floor-tile-intro" class="floor-tile">
+
+            <div id="dark-background-1"></div>
+
+            <div id="text-box-1" class="textbox fade-out">
+                <p>
+                    Etter å ha funnet hverandre på pariserhjulet går det fort for seg. Alex og damen går fra en hyggelig date til neste. <br><br>
+                    Før kvelden har kommet befinner de seg begge i en av Las Vegas sine mange kirker og er klare til å gi hverandre sitt ja foran kongen.
+                </p>
+            </div>
+
+            
+            <!-- DEL 2) Alex kommer til kirken -->
+            <label class="click-action" id="scene2">
+                <input type="checkbox" class="visible-checkbox" id="checkbox-part-2">
+                
+                <!-- Play-knapp for å starte del 2 -->
+                <div id="button-play-scene-2" class="play-button">  
+                    <div class="play-icon"></div>
+                </div>
+
+                <img src="images/alex-right-face.webp" alt="" id="alex-facing-right">
+                
+                <div id="think-bubble-1" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p >
+                        Wow! For en dag det har vært ❤️ <br> 
+                        Jeg har ikke følt så sterkt siden dverghamsteren min døde.
+                    </p>
+                </div>
+                <div id="think-bubble-2" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p >
+                        Se hvor vakker hun er 😍 <br>
+                        Jeg kjenner det kribler i magen!
+                    </p>
+                </div>
+                <div id="think-tail-1-1" class="bubble"></div>
+                <div id="think-tail-1-2" class="bubble"></div>
+                <div id="think-tail-1-3" class="bubble"></div>
+            
+                <img src="images/background-church_floor-tile.png" alt="" id="floor-tile-2" class="floor-tile">
+
+            </label>
+
+
+            <!-- DEL 3) Kona ser Alex og sier alt er klart -->
+            <label class="click-action" id="scene3">
+                <input type="checkbox" class="visible-checkbox" id="checkbox-part-3">
+                
+                <!-- Play-knapp for å starte del 3 -->
+                <div id="button-play-scene-3" class="play-button">  
+                    <div class="play-icon"></div>
+                </div>
+
+                <img src="images/bride-back-upper-1.png" alt="" id="bride-facing-in-front">
+
+                <div id="speech-bubble-1" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        <strong>Alex!</strong> <br>
+                        Der er du endelig, kom igjen, kongen er klar.
+                    </p>
+                </div>
+
+                <img src="images/elvis-front-upper-1.png" alt="" id="elvis-reading-front">
+
+                <div id="speech-bubble-2" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        <strong>Hva? Oh baby, endelig er han her.</strong> <br>
+                        Da skal vi få vist litt kjærlighet her i guds hus. Halleluja!
+                    </p>
+                </div>
+
+                <img src="images/background-church_floor-tile.png" alt="" id="floor-tile-3" class="floor-tile">
+
+            </label>
+
+
+            <!-- DEL 4) De blir gift -->
+            <label class="click-action" id="scene4">
+                <input type="checkbox" class="visible-checkbox" id="checkbox-part-4">
+                
+                <!-- Play-knapp for å starte del 3 -->
+                <div id="button-play-scene-4" class="play-button">  
+                    <div class="play-icon"></div>
+                </div>
+
+                <img src="images/elvis-front-upper-2.png" alt="" id="elvis-facing-right">
+                <img src="images/alex-left-face.webp" alt="" id="alex-facing-left">
+                <img src="images/bride-back-upper-1.png" alt="" id="bride-facing-in-front-2">
+
+                <div id="speech-bubble-3" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        <strong>Stig fram! Halleluja!</strong>
+                    </p>
+                </div>
+
+                <div id="speech-bubble-4" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        <strong>Da må vi skynde oss!</strong> <br>
+                        Du var forsinket mister, nå venter neste par ute i hallen alt.
+                    </p>
+                </div>
+
+                <div id="speech-bubble-5" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        Vel, nå som vi er samlet her (til slutt). Så la oss få smidd disse to turtelduer i Las Vegas' sine ringer.
+                    </p>
+                </div>
+
+                <div id="speech-bubble-6" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        Vil dere som nå foran meg står, ta hverandre til rette ektefolk å være?
+                    </p>
+                </div>
+
+                <div id="speech-bubble-7" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        <em>Alright!</em> 😍 Øh... JA!
+                    </p>
+                </div>
+
+                <div id="speech-bubble-8" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        JA! ❤️
+                    </p>
+                </div>
+
+                <div id="speech-bubble-9" class="bubble">
+                    <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                    <p>
+                        Med kraften gitt meg fra Vegas og Rock n' roll erklærer jeg dere mann og kone. Kyss henne på vei ut!
+                    </p>
+                </div>
+
+                <img src="images/lipstick_kiss.png" alt="" class="kiss" id="kiss-mark-1">
+            
+                <div id="dark-background-2" class="dark-screen"></div>
+
+                <div id="text-box-2" class="textbox">
+                    <p>
+                        Nå lykkelig gift fortsetter de feiringen med mat, drikke og alle andre gleder Las Vegas har å by på. <br><br>
+                        De møter masse folk som blir med og feirer med dem og de kjenner det tar på, men Las Vegas har sin egen energi som gjør at de fortsetter lenger enn de trodde var mulig.<br><br>
+                        <em>Trykk deg videre for å se fortsettelsen.</em>
+                    </p>
+                </div>
+
+            </label>
+            
+            <!-- Elementer i bakgrunnen -->
+            <div id="elvis-mini">
+                <img src="images/elvis-placeholder.png" alt="" id="elvis-priest-in-background">
+                <div id="mini-elvis-talk">Oh baby!</div>
+                <img src="images/elvis-placeholder-kick.png" alt="" id="elvis-priest-in-background-kicking">
+            </div>
+
+            <div id="mini-bride">
+                <img src="images/bride-back-full-3-turned-away.png" alt="" id="bride-facing-away-in-background">
+                <img src="images/bride-back-full-3-looking.png" alt="" id="bridet-turning-around">
+            </div>
+
+            <img src="images/elvis-image-kissing.png" alt="" id="elvis-kiss">
+
+            <img src="images/background-church_lamp.png" alt="" id="chandelier">
+            
+        <!-- Slutt Main Container -->
+        </div> 
+
+    </main>
+
+</body>
+</html>

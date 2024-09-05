@@ -1,0 +1,316 @@
+/*## CSS regler for den spesifikke siden (animasjoner, bilder, etc.) */
+/* OBS! Husk å endre navn på denne filen til nummeret på siden din */
+
+/* Eksamensgruppe 8 Bergen - Kreativt Webprosjekt H2023 */
+
+/* Slide 5 er kodet av Paal Fredrik Nybø */
+
+
+/* Alex posisjon + animasjon */
+#alex {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  z-index: 3;
+  animation:
+    alexMove 2s infinite alternate,
+    alexHover 5s linear 7s 1 forwards,
+    alexSpin 10s linear 7s 1;
+  right: 80px;
+  bottom: 0;
+}
+
+@keyframes alexMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes alexHover {
+  from {bottom: 0;}
+  to {bottom: 150px;}
+}
+
+@keyframes alexSpin {
+  from {transform: rotate(359deg) scale(1);}
+  to {transform: rotate(-359deg) scale(0.1);}
+}
+
+/* Ufo posisjon + animasjon */
+#ufo {
+  width: 250px;
+  z-index: 7;
+  position: absolute;
+  right: -15%;
+  top: 10%;
+  animation:
+    ufoMove 500ms linear 5s 1 forwards,
+    ufoMovement 1s linear 5s infinite alternate-reverse;
+}
+
+@keyframes ufoMove {
+  from {top: -20%;}
+  to {right: 10%;}
+}
+
+@keyframes ufoMovement {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* UFO strålen sin posisjon + animasjon */
+#ray {
+  opacity: 0;
+  width: 200px;
+  z-index: 4;
+  position: absolute;
+  right: 9%;
+  bottom: 276px;
+  animation-name: rayMove;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rayMove {
+  0% {opacity: 0;}
+  100% {opacity: 100%;}
+}
+
+/* Portal posisjon + animasjon */
+#ray2 {
+  opacity: 0;
+  width: 300px;
+  z-index: 6;
+  position: absolute;
+  right: -10%;
+  top: -15%;
+  animation-name: portalMove;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-delay: 5s;
+}
+
+@keyframes portalMove {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
+/* Bildet og animasjonen til "tumbleweed" */
+#tWeed {
+  width: 100px;
+  z-index: 7;
+  position: absolute;
+  left: -15%;
+  bottom: 2%;
+  animation:
+      tWeedMove 1s linear infinite,
+      animation2 5s linear 0s 1;
+}
+
+@keyframes tWeedMove {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+
+
+@keyframes animation2 {
+  0% {left: -100px;}
+  100% {left: 1500px;}
+}
+
+/* bildet til ekstra lys/stjerne + animasjon */
+#lights {
+  width: 100px;
+  z-index: 8;
+  position: absolute;
+  left: 10%;
+  bottom: 500px;
+  animation-name: lightsMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#lights2 {
+  width: 100px;
+  z-index: 8;
+  position: absolute;
+  left: 20%;
+  bottom: 400px;
+  animation-name: lightsMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#lights3 {
+  width: 100px;
+  z-index: 9;
+  position: absolute;
+  left: 65%;
+  bottom: 500px;
+  animation-name: lightsMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes lightsMove {
+  0% { opacity: 0; }
+  100% { opacity: 50%; }
+}
+
+#fadeToBlack {
+  opacity: 0;
+  width: 1500px;
+  z-index: 10;
+  position: absolute;
+  animation: theEnd;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes theEnd {
+  0% {opacity: 0;}
+  100% {opacity: 100%}
+}
+
+
+
+#speech-bubble-1 { /* Endrer utseende på snakkeboblen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+
+    /* Størrelse på snakkeboblen */
+    width: 300px;
+    height: 200px;
+
+    /* Plassering av snakkeboblen */
+    top: 8px;
+    left: 1095px;
+
+    /* Plassering av teksten i boblen */
+    text-align: center;
+    font-size: 25px;
+}
+
+#speech-bubble-1 p { /* sentrerer teksten inni snakkeboblen */
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#speech-bubble-1::after { /* Halen på snakkeboblen */
+    content: "";
+    border: 30px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+
+    /* Justerer plassering av "halen" til snakkeboblen */
+    left: 13px;
+    top: 81%;
+    margin-top: -20px;
+}
+
+#think-bubble-1 { /* Endrer utseende på tankeboblen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+
+    /* Størrelse på tankeboblen */
+    width: 300px;
+    height: 200px;
+
+    /* Plassering av tankeboblen */
+    top: 8px;
+    left: 1095px;
+
+    /* Plassering av teksten i boblen */
+    text-align: center;
+    font-size: 25px;
+}
+
+#think-tail-1 { /* Største boblen i halen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 180px;
+    left: 1110px;
+}
+
+#think-tail-2 { /* Mellomste boblen i halen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 213px;
+    left: 1083px;
+}
+
+#think-tail-3 { /* Minste boblen i halen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 230px;
+    left: 1050px;
+}
+
+#think-bubble-1 p { /* sentrerer teksten inni tankeboblen */
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-box-1 { /* Endrer utseende på tekstboksen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+
+    /* Plassering på tekstboksen */
+    top: 25%;
+    right: 35%; /* Bytt til "left" om du skal flytte til andre siden */
+
+    /* størrelse på tekstboksen */
+    width: 400px;
+    height: 375px;
+
+    /* Størrelsen på teksten */
+    text-align: center;
+    font-size: 25px;
+
+    animation: textBox 3s linear 12s 1 forwards;
+
+    z-index: 50;
+}
+
+@keyframes textBox {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
+#text-box-1 p { /* Endrer utseende på teksten i tekstboksen */
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#top-right {
+  pointer-events: none;
+}

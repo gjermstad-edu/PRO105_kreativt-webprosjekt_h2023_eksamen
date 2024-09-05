@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapittel 2 - Alex finner kjærligheten</title> <!-- Husk å endre til nummeret for din slide -->
+    <link rel="stylesheet" href="css/sideX.css"> <!-- Laster først inn inn CSS-koden som er kun for denne sliden -->
+    <link rel="stylesheet" href="css/global.css"> <!-- Laster CSS-koden som er global/lik for alle sidene vi lager -->
+    <link rel="stylesheet" href="css/scene-2.css"> <!--Miriam's kode til scene 2, pariserhjulet "High Roller" -->
+</head>
+
+<body>
+    <!-- Eksamengruppe 8 Bergen - Kreativt Webprosjekt H2023 -->
+    <!-- Slide 2 "Alex finner kjærligheten i pariserhjulet "High Roller" er kodet av Miriam Fosmark Haugland -->
+
+    <!-- Her ligger alle deler for menyen i topplinjen -->
+    <header>
+        <div id="top-header">
+
+            <div id="top-container">
+
+                <div id="top-left">
+                    <div id="menuToggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="hamburger-menu">
+                            <!-- Her endrer vi # til å linke til hvert kapitel når vi har lagd sidene -->
+                            <li><strong>Gå til:</strong></li>
+                            <li class="skille"><a href="index.html">• Kapittel 1</a></li>
+                            <li class="skille"><a href="side2.html">• Kapittel 2</a></li>
+                            <li class="skille"><a href="side3.html">• Kapittel 3</a></li>
+                            <li class="skille"><a href="side4.html">• Kapittel 4</a></li>
+                            <li><a href="side5.html">• Kapittel 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="top-middle">
+                    <!-- Endre kapittel-navn til hva som er riktig for din slide -->
+                    <h1>Kapittel 2: Alex finner kjærligheten</h1>
+                </div>
+
+                <div id="top-right">
+                    <a href="side3.html">
+                        >
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Her ligger alle deler for "skjermen" vi viser historien i -->
+    <main>
+        <!-- Bakgrunnsbildene som er ute av fokus -->
+        <div id="blurry-container">
+            <div id="blurry-background-left">
+                <img src="images/scene_1_2_cropped.webp" alt="" class="blurredphoto">
+                <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+            </div>
+            <div id="blurry-background-right">
+                <img src="images/scene_2_2_cropped.webp" alt="" class="blurredphoto right">
+                <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+            </div>
+        </div>
+
+        <!-- Sett alle bilder og elementer inni "container"-diven under da dette er det aktive området vi arbeider med -->
+        <div id="main-container">
+
+            <!-- Venstre side -->
+            <div id="left-side">
+
+                <!-- Dørene som åpnes ved bruk av checkbox -->
+                <!-- Kilde til inspirasjon for dør animasjonen (ikke kopiert, gjort til mitt eget): https://css-tricks.com/creating-css-sliding-door-effect/ -->
+                <div id="black-door-opening">
+                    <input type="checkbox" id="door-click">
+
+                    <!-- Både venstre og høyre side av dørene -->
+                    <div class="door" id="left-door"></div>
+                    <div class="door" id="right-door"></div>
+                </div>
+
+                <!-- Tekst boks venstre side -->
+                <div class="text-box-1">Alex prøver å finne et rom hvor han kan skifte dress. <br>
+                    Han vil se sitt aller beste ut for daten. <br>
+                    Etter å ha skiftet går Alex igjennom dørene for å nå vognen hun sitter i..</div>
+
+                <!-- Alex container og bilde venstre side -->
+                <div id="alex-container">
+                    <img src="images/scene_1_1_alex.webp" alt="alex" id="alex">
+
+                    <!-- Snakke bobble nr.1 venstre side -->
+                    <div id="speech-bubble-1" class="bubble">
+                        <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                        <p>
+                            <strong>Alright!</strong> <br>
+                            Jeg har møtt verdens vakreste kvinne!
+                            Jeg har invitert henne på en date i pariserhjulet “High Roller”
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bakgrunnsbilde venstre side -->
+                <img src="images/scene_1_2_cropped.webp" alt="" id="background-image-left">
+                <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+
+            </div>
+
+            <!-- Høyre side -->
+            <div id="right-side">
+
+                <!-- Tekst boks høyre side -->
+                <div class="text-box-1"> Etter en fantastisk dag <br> er Alex i ekstase og spør om hun vil oppdage <br> Las
+                    Vegas med ham. <br>
+                    Til hans store overaskelse sier hun ja og de løper av sted sammen!
+                </div>
+
+                <!-- Høyre side interaktive bilder -->
+                <!-- Kilde til inspirasjon for animasjonen (ikke kopiert, gjort til mitt eget, (den som heter "hi there"): https://codepen.io/nelledejones/pen/gOOPWrK -->
+                <img src="images/scene_1_2_bride.webp" alt="kvinnen" id="woman">
+                <img src="images/champagne.webp" alt="champaign" id="champaign">
+                <img src="images/glass.webp" alt="glass" id="glas-1">
+                <img src="images/glass.webp" alt="glass" id="glas-2">
+                <img src="images/roof.webp" alt="roof" id="roof">
+                <img src="images/chandelier.webp" alt="chandelier" id="chandelier">
+                <!-- Kilde til inspirasjon for animasjonen (ikke kopiert, gjort til mitt eget, (den som heter "fade-out"): https://codepen.io/nelledejones/pen/gOOPWrK -->
+                <img src="images/heart.webp" alt="heart" id="heart">
+                <img src="images/star.webp" alt="star" id="star">
+
+                <!-- Alex container og bilde høyre side -->
+                <div id="alex-golden-container">
+                    <img src="images/scene_2_3_alex.webp" alt="alex" id="alex-golden">
+
+                    <!-- Snakke bobble nr.2 høyre side -->
+                    <div id="speech-bubble-2" class="bubble">
+                        <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                        <p>
+                            <strong>Alright!</strong> <br>
+                            Jeg er så glad for at du sa ja! <br>
+                            Jeg vet om flere steder jeg gjerne vil ta deg med!
+                            Dette blir en aften man sent vil glemme!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bakgrunnsbilde venstre side -->
+                <img src="images/scene_2_2_cropped.webp" alt="" id="background-image-right">
+                <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

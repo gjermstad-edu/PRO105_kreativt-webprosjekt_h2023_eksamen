@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapittel 1 - Alex i Las Vegas</title> <!-- Husk å endre til nummeret for din slide -->
+    <link rel="stylesheet" href="css/side1.css"> <!-- Laster først inn inn CSS-koden som er kun for denne sliden -->
+    <link rel="stylesheet" href="css/global.css"> <!-- Laster CSS-koden som er global/lik for alle sidene vi lager -->
+    <link rel="stylesheet" href="css/animasjonerSide1.css"> <!-- Animasjoner for Side 1 -->
+</head>
+<body>
+    <!-- Eksamensgruppe 8 Bergen - Kreativt Webprosjekt H2023-->
+    <!-- Slide 1 er kodet av Storm Julian Thorsen-->
+
+    <!-- Her ligger alle deler for menyen i topplinjen -->
+    <header>
+        <div id="top-header">
+
+            <div id="top-container">
+
+                <div id="top-left">
+                    <div id="menuToggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="hamburger-menu">
+                            <!-- Her endrer vi # til å linke til hvert kapitel når vi har lagd sidene -->
+                            <li><strong>Gå til:</strong></li>
+                            <li class="skille"><a href="index.html">• Kapittel 1</a></li>
+                            <li class="skille"><a href="side2.html">• Kapittel 2</a></li>
+                            <li class="skille"><a href="side3.html">• Kapittel 3</a></li>
+                            <li class="skille"><a href="side4.html">• Kapittel 4</a></li>
+                            <li><a href="side5.html">• Kapittel 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="top-middle">
+                    <!-- Endre kapittel-navn til hva som er riktig for din slide -->
+                    <h1>Kapittel 1: Vår historie om Alex i Las Vegas</h1>    
+                </div>
+
+                <div id="top-right">
+                    <a href="side2.html">
+                    >
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Her ligger alle deler for "skjermen" vi viser historien i -->
+    <main>
+        <!-- Bakgrunnsbildet som er ute av fokus -->
+        <div> <!--ENDRET-->
+            <img src="images/scene_1_notext.webp" alt="" id="background-blur-image"> <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+        </div>
+        
+        <!-- CONTAINER FOR SLIDEN - alt utenom menyen i topplinjen og "blurred bakgrunn" skal være inni her -->
+        <div id="main-container">
+            <img src="images/scene_1_notext.webp" alt="" id="background-image"> <!-- Bytt ut med bakgrunnsbildet du ønsker -->
+
+            <!-- Her ligger WELCOME-skiltet -->
+            <div id="welcomeSign">
+                <p id="w">W</p>
+                <p id="e">E</p>
+                <p id="l">L</p>
+                <p id="c">C</p>
+                <p id="o">O</p>
+                <p id="m">M</p>
+                <p id="e2">E</p>
+            </div>
+
+            <!-- KNAPP for å begynne scene -->
+            <label class="click-action"> <!-- Alt som skal bli påvirket må inni denne label-->
+                <input type="checkbox" class="checkbox-visibility" id="scene1">
+                
+                <!-- INTRO - Her ligger alle elementer som skal være foran bakgrunnen i intro/info skjerm -->
+                <div id="okButton"><strong>ALRIGHT!</strong></div>
+
+                <img src="images/AlexIntro.webp" alt="" id="alex-intro"> <!-- Bytt ut med bildet du ønsker -->
+
+                <!-- Her ligger Info boksen -->
+                <div id="infobox">
+                    <p>
+                        Velkommen til historien om  
+                        <br> <strong>ALEX I LAS VEGAS!</strong> 
+                        <br> Historien vil ta deg gjennom vinn, tap, kjærlighet og spenning. 
+                        <br>
+                        <br> For å fortsette i historien må du bruke musepekeren din. Svev, klikk, dill med musen din, så kanskje det skjer noe gøy! For å komme deg videre til neste kapittel kan du enten manuvrere deg fremover i historien med <em>pilen</em> øverst til høyre, eller så kan du bruke <em>hamburgermenyen</em> på venstre side for å velge kapittel. 
+                        <br> 
+                        <br>
+                        <br>
+                        <br> <strong>Klikk på ALRIGHT! for å starte!</strong>
+                    </p>
+                </div> 
+
+                <!-- SCENE 1 - Her ligger alle elementer for scene 1 -->
+                <img src="images/AlexBack.webp" id="alex-back" alt="">
+
+                <!-- Her ligger alle snakkebobler/tankebobler/tekstboks -->
+                <div id="text-box-1" class="textbox">
+                    <p>Alex har nettopp ankommet stedet hvor det skjer, <br> selveste <strong>Las Vegas.</strong> <br> Som en brå, råstart på en bra ferie har han planlagt en date med en vakker kvinne opp i byens pariserhjul, <em>High Roller</em>. Først må han bare nyte utsikten av soloppgangen. </p>
+                </div>
+
+                <div id="speech-bubble-1" class="bubble">
+                        <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                        <p>
+                            <strong></strong> <br>
+                            <strong>Alriiiiight!</strong> Da er vi i Vegas baby!
+                        </p>
+                </div>
+            
+                <div id="think-bubble-1" class="bubble">
+                        <!-- Husk å endre nummer i ID + i CSS-regler om du har flere snakkebobler -->
+                        <p>
+                            Sett inn tekst her
+                        </p>
+                </div>
+                <div id="think-tail-1" class="bubble"></div>
+                <div id="think-tail-2" class="bubble"></div>
+                <div id="think-tail-3" class="bubble"></div>
+            
+
+            </label> <!-- Avslutter labelen som påvirker alt inni -->
+        </div>
+
+        
+    </main>
+
+</body>
+</html>

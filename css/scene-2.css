@@ -1,0 +1,379 @@
+/*Eksamengruppe 8 Bergen - Kreativt Webprosjekt H2023*/
+/*Slide 2 "Alex finner kjærligheten i pariserhjulet "High Roller" er kodet av Miriam.Fosmark.Haugland*/
+
+/*Venste side bakgrunnsbilde*/
+#left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Den sorte åpningen til dørene som åpnes og lukkes på venstre bakgrunnsbilde*/
+#black-door-opening {
+    display: flex;
+    position: absolute;
+    width: 160px;
+    height: 121px;
+    bottom: 150px;
+    left: 257px;
+    background-color: black;
+    overflow: hidden;
+}
+
+/*Felles instillinger til venstre og høyre dør*/
+.door {
+    width: 50%;
+    height: 123px;
+    position: relative;
+    transition: all 2s ease-out;
+}
+
+/*Er en checkbox som sitter presist der man trykker på dørene/åpningen, dette er dens størrelse og posisjon
+Den er usynlig/vises ikke da opacity er 0
+Kilde til inspirasjon for dør animasjonen (ikke kopiert, gjort til mitt eget): https://css-tricks.com/creating-css-sliding-door-effect/*/
+#door-click {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+}
+
+/*Her skyves venstre dør til venstre via x-aksen, hvis checkboxen er trykket på*/
+#door-click:checked~#left-door {
+    transform: translateX(-100%);
+}
+
+/*Her skyves høyre dør til høyre via x-aksen, hvis checkboxen er trykket på*/
+#door-click:checked~#right-door {
+    transform: translateX(100%);
+}
+
+/*Klippet versjon av bakgrunnsbilde for å få venstre dør, den kan da animeres separert*/
+#left-door {
+    background: url(../images/left_door.webp) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Klippet versjon av bakgrunnsbilde for å få høyre dør, den kan da animeres separert*/
+#right-door {
+    background: url(../images/right_door.webp) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Snakke bobble nr.1, størrelse og posisjon*/
+#speech-bubble-1 {
+    position: absolute;
+    height: 150px;
+    top: 170px;
+    left: 0;
+    font-size: 20px;
+    display: none;
+}
+
+/*Halen til snakke bobblen*/
+#speech-bubble-1::after {
+    left: 151px;
+    transform: rotate(267deg);
+    top: 100%;
+    margin-top: -21px;
+}
+
+/*Alex størrelse, posisjon og utseende*/
+#alex {
+    position: absolute;
+    width: 350px;
+    left: 0px;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+/*Viser snakke bobble nr.1 når man holder musepeker over Alex på venstre side*/
+#alex-container:hover #speech-bubble-1 {
+    opacity: 1;
+    display: block;
+}
+
+/*Alex visuelt presentert når musepeker er over*/
+#alex:hover {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+
+/*Tekst boks i hjørnet, dens størrelse, posisjon og utseende*/
+.text-box-1 {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    z-index: 2;
+}
+
+/*Høyre side bakgrunnsbilde*/
+#right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Kvinnen på høyre side og hennes posisjon med animasjon*/
+#woman {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: woman 5s ease-in-out infinite;
+}
+
+/*Kvinnen skaleres opp og har en lett rotasjon til begge sider, hvor hun også skaleres ned igjen
+Kilde til inspirasjon for animasjonen (ikke kopiert, gjort til mitt eget, (den som heter "hi there"): https://codepen.io/nelledejones/pen/gOOPWrK*/
+@keyframes woman {
+    30% {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+    70% {
+        transform: scale(1.1) rotate(5deg);
+    }
+}
+
+/*Alex's størrelse og posisjon på høyre side med animasjon*/
+#alex-golden {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    animation: alex-golden 10s ease-in-out;
+}
+
+/*Alex kommer glidende inn på siden fra utsiden og inn til sin faste posisjon*/
+@keyframes alex-golden {
+    0% {
+        transform: translateX(300px)
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*Alex skaleres opp når man holder musepeker over*/
+#alex-golden:hover {
+    transform: scale(1.2);
+}
+
+/*Snakke bobble nr.2, størrelse og posisjon*/
+#speech-bubble-2 {
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    right: 150px;
+    top: 210px;
+    font-size: 15px;
+    display: none;
+    z-index: 5;
+}
+
+/*Halen til snakke bobblen*/
+#speech-bubble-2::after {
+    content: "";
+    border: 30px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+    left: 172px;
+    transform:rotate(253deg) ;
+    top: 110px;
+    margin-top: -21px;
+}
+
+/*Viser snakke bobble nr.2 når man holder musepeker over Alex på høyre side*/
+#alex-golden-container:hover #speech-bubble-2 {
+    opacity: 1;
+    display: block;
+}
+
+/*Champagne flaskens størrelse og posisjon*/
+#champaign {
+    position: absolute;
+    width: 77px;
+    bottom: 190px;
+    right: 327px;
+    cursor: pointer;
+}
+
+/*Animasjon starter når man holder musepekeren over*/
+#champaign:hover {
+    animation: champaign 7s ease-in-out;
+}
+
+/*Flasken løftes opp y-aksen (vertikalt) og har en rotasjon til høyre og venstre før den settes ned igjen*/
+@keyframes champaign {
+    20% {
+        transform: translateY(-30px);
+    }
+
+    40% {
+        transform: rotate(75deg) translateY(-3px);
+    }
+
+    60% {
+        transform: rotate(-75deg) translateY(-3px);
+    }
+
+    70% {
+        transform: translateY(-15px);
+    }
+}
+
+/*Glass nr.1 størrelse og posisjon*/
+#glas-1 {
+    position: absolute;
+    width: 30px;
+    bottom: 180px;
+    right: 304px;
+    cursor: pointer;
+}
+
+/*Glass nr.2 størrelse og posisjon*/
+#glas-2 {
+    position: absolute;
+    width: 30px;
+    bottom: 180px;
+    left: 274px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*Animasjon når man holder musepeker over glass nr.1*/
+#glas-1:hover {
+    animation: glas-1 3s ease-in-out;
+}
+
+/*Animasjon når man holder musepeker over glass nr.2*/
+#glas-2:hover {
+    animation: glas-2 3s ease-in-out;
+}
+
+/*Glass nr.1 løftes opp, har en liten rotasjon mot venstre og settes ned igjen*/
+@keyframes glas-1 {
+    20% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    70% {
+        transform: translatey(-5px);
+    }
+}
+
+/*Glass nr.2 løftes opp, har en liten rotasjon mot høyre og settes ned igjen*/
+@keyframes glas-2 {
+    20% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    70% {
+        transform: translatey(-5px);
+    }
+}
+
+/*Klippet versjon av bakgrunnsbilde får å få deler av taket slik at lenken på lysekronen kan gå bak dette bilde. 
+Dette er bildets størrelse og posisjon*/
+#roof {
+    position: absolute;
+    width: 260px;
+    top: 0;
+    right: 213px;
+    z-index: 1;
+}
+
+/*Lysekronens størrelse og posisjon med en animasjon*/
+#chandelier {
+    position: absolute;
+    width: 250px;
+    top: 30px;
+    right: 218px;
+    animation: chandelier 5s ease-in-out infinite;
+}
+
+/*Lysekronen senkes opp og ned fra taket (mellom to bilder)*/
+@keyframes chandelier {
+    0% {
+        transform: translateY(0px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+}
+
+/*Hjerte over kvinnens hode, dens størrelse og posisjon med en animasjon*/
+#heart {
+    position: absolute;
+    width: 50px;
+    left: 100px;
+    bottom: 250px;
+    animation: heart 4s ease-in-out infinite;
+}
+
+/*Hjertet er ikke synlig i starten men gradvis som den flyter oppover blir den synligere*/
+@keyframes heart {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+/*Stjernens størrelse og posisjon med animasjon*/
+#star {
+    position: absolute;
+    width: 50px;
+    top: 220px;
+    left: 5px;
+    transform: rotate(58deg);
+    animation: star 2s ease-in-out infinite;
+}
+
+/*Stjernen er usynlig, men kommer til syne*/
+@keyframes star {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

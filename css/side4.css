@@ -1,0 +1,381 @@
+/*## CSS regler for den spesifikke siden (animasjoner, bilder, etc.) */
+/* OBS! Husk å endre navn på denne filen til nummeret på siden din */
+
+#text-box-1 { /* Endrer utseende på tekstboksen */
+    opacity: 1; /* 0 = usynlig / 1 = synlig */
+    
+    /* Plassering på tekstboksen */
+    top: 0;
+    right: 0; /* Bytt til "left" om du skal flytte til andre siden */
+    
+    /* størrelse på tekstboksen */
+    width: 300px;
+    height: 250px;
+
+    /* Størrelsen på teksten */
+    text-align: center;
+    font-size: 25px;
+    animation: FadeInOut-box1 13s linear forwards;
+    
+}
+
+#text-box-1 p { /* Endrer utseende på teksten i tekstboksen */
+    margin: 0;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes FadeInOut-box1 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#Alex {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 60%;
+    bottom: -30px;
+    left: 10px;
+    
+    animation: UpDown 2s ease 12s 2, walking 4s ease-out 12s, FadeInOut-Alex1 11s linear forwards 12s;
+} 
+
+@keyframes UpDown {
+    0% { bottom: -30px;}
+    50% {bottom: 0px;}
+    100% {bottom: -30px}
+} 
+
+@keyframes walking {
+    from { left: -350px;}
+    to { left: 10px;}
+}
+
+@keyframes FadeInOut-Alex1 {
+    0%, 100% { opacity: 0; }
+    5%, 80% { opacity: 1; }
+}
+
+#speech-bubble-1 { /* Endrer utseende på snakkeboblen */
+    opacity: 0; /* 0 = usynlig / 1 = synlig */
+
+    /* Størrelse på snakkeboblen */
+    width: 300px;
+    height: 200px;
+
+    /* Plassering av snakkeboblen */
+    top: 100px;
+    left: 290px;
+    
+    /* Plassering av teksten i boblen */
+    text-align: center;
+    font-size: 25px;
+
+    animation: FadeInOut-speech1 9s linear forwards 12s;
+    z-index: 5;
+}
+
+#speech-bubble-1 p { /* sentrerer teksten inni snakkeboblen */
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#speech-bubble-1::after { /* Halen på snakkeboblen */
+    content: "";
+    border: 30px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+
+    /* Justerer plassering av "halen" til snakkeboblen */
+    left: 13px;
+    transform:rotate(310.5deg);
+    top: 81%;
+    margin-top: -20px;
+}
+
+@keyframes FadeInOut-speech1 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#text-box-2 {
+    opacity: 0; 
+    
+    top: 30%;
+    right: 30%;
+    
+    width: 300px;
+    height: 150px;
+
+    text-align: center;
+    font-size: 25px;
+    animation: FadeInOut-box1 4s linear forwards 23s;
+    
+}
+
+#text-box-2 p {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes FadeInOut-box2 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#Alex2 {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 60%;
+    bottom: 0px;
+    left: 300px;
+    transform: scaleX(-1);
+    animation: FadeInOut-Alex2 11s linear forwards 26s;
+}
+
+@keyframes FadeInOut-Alex2 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#speech-bubble-2 {
+    opacity: 0; 
+
+    width: 300px;
+    height: 200px;
+
+    top: 100px;
+    left: 100px;
+    
+    text-align: center;
+    font-size: 25px;
+
+    animation: FadeInOut-speech2 9s linear forwards 27s;
+    z-index: 5;
+}
+
+#speech-bubble-2 p {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#speech-bubble-2::after {
+    content: "";
+    border: 30px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+    right: 13px;
+    transform:rotate(229deg);
+    top: 81%;
+    margin-top: -20px;
+}
+
+@keyframes FadeInOut-speech2 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#text-box-3 { 
+    opacity: 0; 
+    
+    top: 0;
+    right: 0; 
+    
+    width: 300px;
+    height: 250px;
+
+    text-align: center;
+    font-size: 25px;
+
+    animation: FadeInOut-box1 13s linear forwards 37s;
+}
+
+@keyframes FadeInOut-box2 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#text-box-3 p { 
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Alex-sitter {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 60%;
+    bottom: 0px;
+    right: 50px;
+    animation: FadeInOut-Alex-sitter 13s linear forwards 50s;
+}
+
+@keyframes FadeInOut-Alex-sitter {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+#speech-bubble-3 {
+    opacity: 0; 
+
+    width: 300px;
+    height: 200px;
+
+    top: 70px;
+    right: 340px;
+    
+    text-align: center;
+    font-size: 25px;
+
+    animation: FadeInOut-speech3 11s linear forwards 51s;
+}
+
+#speech-bubble-3 p { /* sentrerer teksten inni snakkeboblen */
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#speech-bubble-3::after {
+    content: "";
+    border: 30px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+    right: 13px;
+    transform:rotate(229deg);
+    top: 81%;
+    margin-top: -20px;
+}
+
+@keyframes FadeInOut-speech3 {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+
+/* poointer event: none 
+for ting som ikke skal trykkes på*/
+
+
+/* transforme: scaleX(-1); */
+
+#glow-green {
+   
+
+    width: 9%;
+    height: 7%;
+
+    top: 48%;
+    left: 4%;
+
+    position: absolute;
+    border: 5px transparent;
+    border-radius: 50%;
+
+    box-shadow: 0 0 100px 40px rgb(149, 249, 0);
+    animation: green-glow 1s infinite;
+}
+
+#glow-purple {
+    width: 7.7%;
+    height: 6%;
+
+    top: 48%;
+    left: 19%;
+
+    position: absolute;
+    border: 5px transparent;
+    border-radius: 50%;
+
+    box-shadow: 0 0 100px 30px rgb(203, 35, 245);
+    animation: purple-glow 500ms infinite;
+}
+
+#glow-red {
+    width: 5.5%;
+    height: 4%;
+
+    top: 49%;
+    left: 30%;
+
+    position: absolute;
+    border: 5px transparent;
+    border-radius: 50%;
+
+    box-shadow: 0 0 100px 30px rgb(255 0 0);
+    animation: red-glow 800ms infinite;
+}
+
+#glow-orange {
+    opacity: 0;
+
+    width: 3%;
+    height: 4%;
+
+    top: 49%;
+    left: 39%;
+
+    position: absolute;
+    border: 5px transparent;
+    border-radius: 50%;
+
+    box-shadow: 0 0 100px 30px rgb(255, 140, 0);
+    animation: orange-glow 300ms infinite;
+}
+
+@keyframes green-glow {
+    0%, 100% {opacity: 1;}
+
+    50% {opacity: 0.5;}
+}
+
+@keyframes purple-glow {
+    0%, 100% {opacity: 1;}
+
+    50% {opacity: 0.5;}
+}
+
+@keyframes red-glow {
+    0%, 100% {opacity: 1;}
+
+    50% {opacity: 0.5;}
+}
+
+@keyframes orange-glow {
+    0%, 100% {opacity: 1;}
+
+    50% {opacity: 0.5;}
+}

@@ -1,0 +1,215 @@
+/* HER LIGGER ALLE ANIMASJONER FOR SIDE 1 */
+
+/* Eksamensgruppe 8 Bergen - Kreativt Webprosjekt H2023 */
+/* Slide 1 er kodet av Storm Julian Thorsen */
+
+/* ANIMASJONER FOR "ALEX-BACK */
+
+/* ZOOM UT effekt */
+@keyframes walkIn {
+    0% {
+        right: -190%;
+        width: 510%;
+        top: -120%;
+    }
+    100% {
+        width: 40%;
+        right: 10%;
+        top: 25%;
+    }
+}
+/* GÅ - effekt */
+@keyframes waddle {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* PUSTE - effekt */
+@keyframes loopAnimation {
+    0%, 100% {
+        transform: translate(0px, 3px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* ANIMASJON FOR SNAKKE-BOBLE */
+
+@keyframes bubbleAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loopAnimation {
+    0%, 100% {
+        transform: translate(0px, 3px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/* ANIMASJONER FOR WELCOME-SKILT */
+
+@keyframes blinkW {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0); 
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkE {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkL {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkC {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkO {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkM {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
+
+@keyframes blinkE2 {
+    0% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+    50% {
+        opacity: 1;
+        color:rgb(255, 196, 0);
+        text-shadow:0 0 5px rgba(255, 196, 0, 0.7),
+                    0 0 10px rgba(255, 196, 0, 0.5),
+                    0 0 15px rgba(255, 196, 0, 0.3);
+    }
+    100% {
+        opacity: 0.7;
+        color:rgb(180, 133, 4);
+    }
+}
