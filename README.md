@@ -3,7 +3,9 @@
 > 
 > **Karakter: Bestått** (Bestått / Ikke bestått)
 
-Dette er min gruppebesvarelse på eksamen i PRO105 Kreativt webprosjekt ved Høyskolen Kristiania våren 2024 (2. semester på utdanningen). Vi var 5 studenter på gruppe (gruppen ble satt tilfeldig av skolen) som alle lagde en side hver.
+Dette er min gruppebesvarelse på eksamen i PRO105 Kreativt webprosjekt ved Høyskolen Kristiania høsten 2023 (1. semester i utdanningen). 
+
+Vi var 5 studenter på gruppe (gruppen ble satt tilfeldig av skolen) som alle lagde en side hver.
 
 Det var kun lov til å bruke HTML og CSS, ikke Javascript eller rammeverk.
 
