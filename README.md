@@ -9,4 +9,8 @@ Vi var 5 studenter på gruppe (gruppen ble satt tilfeldig av skolen) som alle la
 
 Det var kun lov til å bruke HTML og CSS, ikke Javascript eller rammeverk.
 
-Min side var side (bryllup i Las Vegas).
+Min side var side 3 (bryllup i Las Vegas).
+
+-----
+
+Forelesere i faget var [Alexander Sundli-Härdig](https://www.linkedin.com/in/asundlihardig/) (HTML og CSS) og [Terje Idland](https://www.linkedin.com/in/terje-idland-b474a282/) (kreative prosesser).
