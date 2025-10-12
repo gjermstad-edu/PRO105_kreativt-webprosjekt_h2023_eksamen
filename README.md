@@ -11,6 +11,8 @@ Min side var side 3 (bryllup i Las Vegas).
 
 Det var kun lov til å bruke ren HTML5 og CSS3, ikke Javascript eller andre rammeverk (dette ville gitt automatisk stryk).
 
+### Du kan se nettsiden live her: https://pro105-exam-h2023.netlify.app
+
 -----
 
 Forelesere i faget var [Alexander Sundli-Härdig](https://www.linkedin.com/in/asundlihardig/) (HTML og CSS) og [Terje Idland](https://www.linkedin.com/in/terje-idland-b474a282/) (kreative prosesser).
