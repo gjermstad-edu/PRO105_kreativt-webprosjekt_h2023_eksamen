@@ -5,7 +5,7 @@
 
 Dette er min gruppebesvarelse på eksamen i PRO105 Kreativt webprosjekt ved Høyskolen Kristiania høsten 2023 (1. semester i utdanningen). 
 
-Vi var 5 studenter på gruppe (meg, Paal Fredrik Nybø, Miriam Fosmark Haugland, Storm Julian Thorsen og William Dahl) som alle kodet og animerte en side hver.
+Vi var 5 studenter på gruppe (meg, Paal Fredrik Nybø, [Miriam Fosmark Haugland](https://github.com/MiriamFosmarkHaugland), Storm Julian Thorsen og William Dahl) som alle kodet og animerte en side hver.
 
 Min side var side 3 (bryllup i Las Vegas).
 
